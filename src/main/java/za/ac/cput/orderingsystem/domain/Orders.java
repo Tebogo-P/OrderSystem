@@ -7,6 +7,7 @@ import java.util.Date;
 
 @Data
 @MappedSuperclass
+@Inheritance(strategy=InheritanceType.JOINED)
 
 public abstract class Orders{
     @Id
